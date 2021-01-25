@@ -1,0 +1,246 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&Roboto:wght@400;500;700&display=swap");
+@font-face {
+  font-family: "Plain";
+  src: url("../fonts/Plain/Plain-Regular.woff2") format("woff2"), url("../fonts/Plain/Plain-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Plain";
+  src: url("../fonts/Plain/Plain-Light.woff2") format("woff2"), url("../fonts/Plain/Plain-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Plain";
+  src: url("../fonts/Plain/Plain-Bold.woff2") format("woff2"), url("../fonts/Plain/Plain-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+  transition: all 0.4s !important;
+}
+
+body {
+  position: relative;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.nav {
+  padding-right: 25px;
+  padding-bottom: 13px;
+}
+
+.nav-link {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  padding: 25px;
+  font-family: "Plain" !important;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.nav-link:hover {
+  opacity: 0.7;
+}
+
+.bg-primary {
+  background-color: rgba(0, 0, 0, 0.8) !important;
+}
+
+.nav-item + .nav-item {
+  margin-left: 3%;
+}
+
+.disabled {
+  opacity: 0.8;
+  color: white !important;
+}
+
+.btn-primary {
+  font-size: 1.5rem;
+  font-family: "Fredoka One", cursive;
+}
+
+.btn-primary:hover {
+  color: #007bff;
+  background-color: white;
+  border-color: white;
+}
+
+.img {
+  float: left;
+  width: 20%;
+  padding-right: 1.5rem;
+  height: auto;
+  padding-top: 7px;
+  padding-bottom: 10px;
+}
+
+@media (max-width: 991.98px) {
+  .img {
+    width: 50%;
+    padding-left: 0 !important;
+  }
+}
+
+p {
+  font-size: 1.15rem;
+  font-family: "Plain", Arial;
+  font-weight: 300;
+  line-height: 1.5rem;
+}
+
+section {
+  min-height: 100vh;
+  background-color: white;
+  padding-top: 70px;
+  padding-bottom: 170px;
+}
+
+.bg-dark {
+  background-color: #00b0db !important;
+  color: white !important;
+}
+
+.bg-dark h2 {
+  color: #cdd42a !important;
+  font-size: 3rem;
+}
+
+.bg-dark h4 {
+  color: #cdd42a !important;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.bg-dark p {
+  color: white !important;
+}
+
+.bg-dark li {
+  color: white !important;
+}
+
+.bg-dark .text-muted {
+  opacity: 0.75;
+  text-align: center;
+}
+
+.navbar-nav {
+  position: absolute;
+  right: 45px;
+}
+
+.pt-150px {
+  padding-top: 150px;
+}
+
+nav {
+  height: 70px !important;
+}
+
+.navbar-brand {
+  padding: 30px;
+  font-family: "Plain";
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+h2 {
+  padding-top: 50px;
+  font-family: "Plain";
+  font-weight: bold;
+  font-style: normal;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+}
+
+.text-black {
+  color: #323232 !important;
+}
+
+@keyframes jump {
+  100% {
+    transform: translate3d(0, 20%, 0);
+  }
+}
+
+.jump {
+  transform-origin: 50% 50%;
+  animation: jump 0.8s linear alternate infinite;
+}
+
+.b-15px {
+  bottom: 3rem;
+  left: 50%;
+  right: auto;
+}
+
+.nav-link {
+  color: #323232;
+  opacity: 0.9;
+}
+
+.nav-link:hover {
+  color: white;
+}
+
+.active {
+  color: white !important;
+}
+
+.active:hover {
+  color: white !important;
+  opacity: 0.9;
+}
+
+.footer {
+  background-color: #141e66 !important;
+  color: white !important;
+}
+
+.footer .footer-icon {
+  padding: 0.4rem;
+  font-size: 1.1rem;
+  color: white;
+  text-align: center;
+  margin: 0.2rem;
+}
+
+.footer .footer-icon:hover {
+  text-decoration: none;
+  color: #00b0db;
+}
+
+.copyright::after {
+  content: "© TM";
+  text-transform: uppercase;
+}
+
+.alignleft {
+  float: left;
+  width: 33.33333%;
+  text-align: left;
+}
+
+.aligncenter {
+  float: left;
+  width: 33.33333%;
+  text-align: center;
+}
+
+.alignright {
+  float: left;
+  width: 33.33333%;
+  text-align: right;
+}
